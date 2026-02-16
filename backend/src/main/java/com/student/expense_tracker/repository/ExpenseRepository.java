@@ -1,6 +1,6 @@
-package com.student.expensetracker.repository;
+package com.student.expense_tracker.repository;
 
-import com.student.expensetracker.model.Expense;
+import com.student.expense_tracker.model.Expense;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
