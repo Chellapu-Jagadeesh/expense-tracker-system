@@ -1,0 +1,7 @@
+CREATE TABLE expenses(
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    amount DOUBLE PRECISION NOT NULL,
+    category VARCHAR(50),
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
