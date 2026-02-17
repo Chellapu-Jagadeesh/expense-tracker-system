@@ -1,4 +1,4 @@
-const API_URL="http://localhost:8080/api/expenses";
+const API_URL="https://expense-tracker-system-atl9.onrender.com/api/expenses";
 
 async function getExpenses(){
     const response=await fetch(API_URL);
