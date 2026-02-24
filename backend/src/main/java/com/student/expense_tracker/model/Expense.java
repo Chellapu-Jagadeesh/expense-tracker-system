@@ -19,4 +19,7 @@ public class Expense {
     private String category;
     @Column(name="date_created")
     private LocalDateTime dateCreated=LocalDateTime.now();
+    @ManyToOne
+    @JoinColumn(name="user_id",nullable=false)
+    private User user;
 }

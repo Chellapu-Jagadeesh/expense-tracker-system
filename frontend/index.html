@@ -7,21 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1> 💰 Expense Tracker</h1>
+<div class="container">
+    <header>
+        <h1>💰 SpendWise</h1>
+        <p id="tagline">Track every penny, easily.</p>
+    </header>
+    <div class="card" id="auth-card">
+        <h3>Login or Register</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <div class="button-group">
+            <button onclick="loginUser()" class="btn-primary">Login</button>
+            <button onclick="registerUser()" class="btn-outline">Register</button>
+        </div>
+    </div>
+    <div id="expenses-section" style="display: none;">
         <div class="card">
-            <input type="text" id="title" placeholder="What did you buy?">
-            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="title" placeholder="Item name (e.g., Coffee)">
+            <input type="number" id="amount" placeholder="Amount (₹)">
             <select id="category">
-                <option value="Food">Food</option>
-                <option value="Rent">Rent</option>
-                <option value="Travel">Travel</option>
-                <option value="Other">Other</option>
+                <option value="Food">🍔 Food</option>
+                <option value="Rent">🏠 Rent</option>
+                <option value="Travel">✈️ Travel</option>
+                <option value="Other">📦 Other</option>
             </select>
-            <button onclick="addExpense()">Add Expense</button>
+            <button onclick="addExpense()" class="btn-primary">Add Expense</button>
+            <button onclick="logout()" class="btn-danger">Logout</button>
+        </div>
+        <div class="summary-card">
+            <span>Total Spent:</span>
+            <span id="total-amount">₹0.00</span>
         </div>
         <div id="expense-list"></div>
     </div>
-    <script src="script.js"></script>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

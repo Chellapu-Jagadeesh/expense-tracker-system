@@ -18,6 +18,8 @@ target/
 *.iws
 *.iml
 *.ipr
+out/
+gen/
 
 ### NetBeans ###
 /nbproject/private/
@@ -31,3 +33,17 @@ build/
 
 ### VS Code ###
 .vscode/
+
+*.class
+*.jar
+*.war
+*.ear
+
+## Secrets & Config ##
+src/main/resources/application.properties
+
+## Other ##
+.DS_Store
+Thumbs.db
+.vercel
+node_modules/
