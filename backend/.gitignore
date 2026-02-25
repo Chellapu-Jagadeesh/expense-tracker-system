@@ -39,9 +39,6 @@ build/
 *.war
 *.ear
 
-## Secrets & Config ##
-src/main/resources/application.properties
-
 ## Other ##
 .DS_Store
 Thumbs.db
