@@ -1,7 +1,6 @@
 # 💰 Expense Tracker
 
  **Live Demo:** https://expense-tracker-system-gilt.vercel.app  
- **Backend API:** https://expense-tracker-system-atl9.onrender.com  
 
 A full-stack expense tracking system built with **Spring Boot, PostgreSQL, and JWT Authentication**.  
 Implements stateless security, user-level data isolation, and production cloud deployment.
